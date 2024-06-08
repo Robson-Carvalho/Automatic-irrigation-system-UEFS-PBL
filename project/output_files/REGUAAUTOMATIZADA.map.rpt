@@ -1,0 +1,1127 @@
+Analysis & Synthesis report for REGUAAUTOMATIZADA
+Wed Jun  5 16:45:52 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F13"
+ 10. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F12"
+ 11. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F11"
+ 12. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F10"
+ 13. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F9"
+ 14. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F8"
+ 15. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F7"
+ 16. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F6"
+ 17. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F5"
+ 18. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F4"
+ 19. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F3"
+ 20. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F2"
+ 21. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F1"
+ 22. Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F0"
+ 23. Port Connectivity Checks: "cronometro:timer|DzMin:DzM|tFlipFlop:F1"
+ 24. Port Connectivity Checks: "cronometro:timer|DzMin:DzM|tFlipFlop:F0"
+ 25. Port Connectivity Checks: "cronometro:timer|UndMin:UndM|tFlipFlop:F0"
+ 26. Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F2"
+ 27. Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F1"
+ 28. Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F0"
+ 29. Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F3"
+ 30. Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F2"
+ 31. Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F1"
+ 32. Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F0"
+ 33. Port Connectivity Checks: "binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F1"
+ 34. Port Connectivity Checks: "binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F0"
+ 35. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F9"
+ 36. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F8"
+ 37. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F7"
+ 38. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F6"
+ 39. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F5"
+ 40. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F4"
+ 41. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F3"
+ 42. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F2"
+ 43. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F1"
+ 44. Port Connectivity Checks: "delayC:dlc|dFlipFlop:F0"
+ 45. Port Connectivity Checks: "delay:dl|dFlipFlop:F15"
+ 46. Port Connectivity Checks: "delay:dl|dFlipFlop:F14"
+ 47. Port Connectivity Checks: "delay:dl|dFlipFlop:F13"
+ 48. Port Connectivity Checks: "delay:dl|dFlipFlop:F12"
+ 49. Port Connectivity Checks: "delay:dl|dFlipFlop:F11"
+ 50. Port Connectivity Checks: "delay:dl|dFlipFlop:F10"
+ 51. Port Connectivity Checks: "delay:dl|dFlipFlop:F9"
+ 52. Port Connectivity Checks: "delay:dl|dFlipFlop:F8"
+ 53. Port Connectivity Checks: "delay:dl|dFlipFlop:F7"
+ 54. Port Connectivity Checks: "delay:dl|dFlipFlop:F6"
+ 55. Port Connectivity Checks: "delay:dl|dFlipFlop:F5"
+ 56. Port Connectivity Checks: "delay:dl|dFlipFlop:F4"
+ 57. Port Connectivity Checks: "delay:dl|dFlipFlop:F3"
+ 58. Port Connectivity Checks: "delay:dl|dFlipFlop:F2"
+ 59. Port Connectivity Checks: "delay:dl|dFlipFlop:F1"
+ 60. Port Connectivity Checks: "delay:dl|dFlipFlop:F0"
+ 61. Analysis & Synthesis Messages
+ 62. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Jun  5 16:45:52 2024       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; REGUAAUTOMATIZADA                           ;
+; Top-level Entity Name       ; system                                      ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 136                                         ;
+; Total pins                  ; 34                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; system             ; REGUAAUTOMATIZADA  ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; On                 ; Off                ;
+; Restructure Multiplexers                                         ; On                 ; Auto               ;
+; Remove Redundant Logic Cells                                     ; On                 ; Off                ;
+; Optimization Technique                                           ; Area               ; Balanced           ;
+; Perform WYSIWYG Primitive Resynthesis                            ; On                 ; Off                ;
+; Auto Shift Register Replacement                                  ; Always             ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Always             ; Auto               ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
+; alarm.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/alarm.v                         ;         ;
+; system.v                         ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v                        ;         ;
+; ValvulaEntrada.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/ValvulaEntrada.v                ;         ;
+; gotejamento.v                    ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/gotejamento.v                   ;         ;
+; aspersao.v                       ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/aspersao.v                      ;         ;
+; decoderIrrigacao.v               ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderIrrigacao.v              ;         ;
+; decoderNivelDagua.v              ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderNivelDagua.v             ;         ;
+; multiplexador.v                  ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/multiplexador.v                 ;         ;
+; output_files/delay.v             ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v            ;         ;
+; output_files/dFlipFlop.v         ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/dFlipFlop.v        ;         ;
+; output_files/decoderColuna.v     ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoderColuna.v    ;         ;
+; output_files/tFlipFlop.v         ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/tFlipFlop.v        ;         ;
+; output_files/delayC.v            ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v           ;         ;
+; output_files/decoder7segDigit.v  ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoder7segDigit.v ;         ;
+; UndSec.v                         ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v                        ;         ;
+; DzSec.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v                         ;         ;
+; UndMin.v                         ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v                        ;         ;
+; DzMin.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v                         ;         ;
+; cronometro.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v                    ;         ;
+; muxCountCronometro.v             ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v            ;         ;
+; twoBitCounter.v                  ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/twoBitCounter.v                 ;         ;
+; binaryToDigit.v                  ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/binaryToDigit.v                 ;         ;
+; LevelToPulse.v                   ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v                  ;         ;
+; decoderDigitos.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v                ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 136   ;
+;     -- Combinational with no register       ; 76    ;
+;     -- Register only                        ; 2     ;
+;     -- Combinational with a register        ; 58    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 46    ;
+;     -- 3 input functions                    ; 28    ;
+;     -- 2 input functions                    ; 21    ;
+;     -- 1 input functions                    ; 39    ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 136   ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 16    ;
+;                                             ;       ;
+; Total registers                             ; 60    ;
+; I/O pins                                    ; 34    ;
+; Maximum fan-out node                        ; m     ;
+; Maximum fan-out                             ; 18    ;
+; Total fan-out                               ; 457   ;
+; Average fan-out                             ; 2.69  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                            ; Entity Name        ; Library Name ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+--------------------+--------------+
+; |system                        ; 136 (0)     ; 60           ; 0          ; 34   ; 0            ; 76 (0)       ; 2 (0)             ; 58 (0)           ; 0 (0)           ; 0 (0)      ; |system                                                                        ; system             ; work         ;
+;    |LevelToPulse:LTP|          ; 18 (4)      ; 14           ; 0          ; 0    ; 0            ; 4 (4)        ; 2 (0)             ; 12 (0)           ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP                                                       ; LevelToPulse       ; work         ;
+;       |dFlipFlop:F0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F0                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F10                                         ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F11                                         ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F12                                         ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F13                                         ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F1                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F2                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F3                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F4                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F5                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F6                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F7                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F8                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|LevelToPulse:LTP|dFlipFlop:F9                                          ; dFlipFlop          ; work         ;
+;    |ValvulaEntrada:ve|         ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|ValvulaEntrada:ve                                                      ; ValvulaEntrada     ; work         ;
+;    |alarm:alarm|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|alarm:alarm                                                            ; alarm              ; work         ;
+;    |binaryToDigit:btd|         ; 6 (4)       ; 2            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |system|binaryToDigit:btd                                                      ; binaryToDigit      ; work         ;
+;       |twoBitCounter:tbc|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |system|binaryToDigit:btd|twoBitCounter:tbc                                    ; twoBitCounter      ; work         ;
+;          |dFlipFlop:F0|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F0                       ; dFlipFlop          ; work         ;
+;          |dFlipFlop:F1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F1                       ; dFlipFlop          ; work         ;
+;    |cronometro:timer|          ; 50 (5)      ; 15           ; 0          ; 0    ; 0            ; 35 (5)       ; 0 (0)             ; 15 (0)           ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer                                                       ; cronometro         ; work         ;
+;       |DzMin:DzM|              ; 4 (0)       ; 2            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzMin:DzM                                             ; DzMin              ; work         ;
+;          |tFlipFlop:F0|        ; 3 (3)       ; 1            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzMin:DzM|tFlipFlop:F0                                ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzMin:DzM|tFlipFlop:F1                                ; tFlipFlop          ; work         ;
+;       |DzSec:DzS|              ; 5 (2)       ; 3            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzSec:DzS                                             ; DzSec              ; work         ;
+;          |tFlipFlop:F0|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzSec:DzS|tFlipFlop:F0                                ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzSec:DzS|tFlipFlop:F1                                ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|DzSec:DzS|tFlipFlop:F2                                ; tFlipFlop          ; work         ;
+;       |UndMin:UndM|            ; 8 (3)       ; 4            ; 0          ; 0    ; 0            ; 4 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndMin:UndM                                           ; UndMin             ; work         ;
+;          |tFlipFlop:F0|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndMin:UndM|tFlipFlop:F0                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndMin:UndM|tFlipFlop:F1                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F2|        ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndMin:UndM|tFlipFlop:F2                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndMin:UndM|tFlipFlop:F3                              ; tFlipFlop          ; work         ;
+;       |UndSec:UndS|            ; 8 (4)       ; 4            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndSec:UndS                                           ; UndSec             ; work         ;
+;          |tFlipFlop:F0|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndSec:UndS|tFlipFlop:F0                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndSec:UndS|tFlipFlop:F1                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndSec:UndS|tFlipFlop:F2                              ; tFlipFlop          ; work         ;
+;          |tFlipFlop:F3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|UndSec:UndS|tFlipFlop:F3                              ; tFlipFlop          ; work         ;
+;       |decoder7segDigit:d7s|   ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|decoder7segDigit:d7s                                  ; decoder7segDigit   ; work         ;
+;       |decoderDigitos:comb_24| ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|decoderDigitos:comb_24                                ; decoderDigitos     ; work         ;
+;       |muxCountCronometro:MCC| ; 9 (7)       ; 2            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|muxCountCronometro:MCC                                ; muxCountCronometro ; work         ;
+;          |twoBitCounter:tbc|   ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|muxCountCronometro:MCC|twoBitCounter:tbc              ; twoBitCounter      ; work         ;
+;             |dFlipFlop:F0|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|muxCountCronometro:MCC|twoBitCounter:tbc|dFlipFlop:F0 ; dFlipFlop          ; work         ;
+;             |dFlipFlop:F1|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|cronometro:timer|muxCountCronometro:MCC|twoBitCounter:tbc|dFlipFlop:F1 ; dFlipFlop          ; work         ;
+;    |decoderColuna:dC|          ; 10 (7)      ; 3            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |system|decoderColuna:dC                                                       ; decoderColuna      ; work         ;
+;       |dFlipFlop:F0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|decoderColuna:dC|dFlipFlop:F0                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|decoderColuna:dC|dFlipFlop:F1                                          ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|decoderColuna:dC|dFlipFlop:F2                                          ; dFlipFlop          ; work         ;
+;    |decoderIrrigacao:di|       ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|decoderIrrigacao:di                                                    ; decoderIrrigacao   ; work         ;
+;    |decoderNivelDagua:dnd|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|decoderNivelDagua:dnd                                                  ; decoderNivelDagua  ; work         ;
+;    |delay:dl|                  ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |system|delay:dl                                                               ; delay              ; work         ;
+;       |dFlipFlop:F0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F0                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F10                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F11                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F12                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F13                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F14                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F15                                                 ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F1                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F2                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F3                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F4                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F5                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F6                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F7                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F8                                                  ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delay:dl|dFlipFlop:F9                                                  ; dFlipFlop          ; work         ;
+;    |delayC:dlc|                ; 10 (0)      ; 10           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 10 (0)           ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc                                                             ; delayC             ; work         ;
+;       |dFlipFlop:F0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F0                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F1                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F2                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F3                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F4                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F5                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F6                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F7                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F8                                                ; dFlipFlop          ; work         ;
+;       |dFlipFlop:F9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |system|delayC:dlc|dFlipFlop:F9                                                ; dFlipFlop          ; work         ;
+;    |multiplexador:mux|         ; 18 (18)     ; 0            ; 0          ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |system|multiplexador:mux                                                      ; multiplexador      ; work         ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 60    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Load  ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F13" ;
++------+--------+----------+---------------------------------+
+; Port ; Type   ; Severity ; Details                         ;
++------+--------+----------+---------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected          ;
+; q    ; Output ; Info     ; Explicitly unconnected          ;
++------+--------+----------+---------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F12" ;
++------+--------+----------+---------------------------------+
+; Port ; Type   ; Severity ; Details                         ;
++------+--------+----------+---------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected          ;
+; q_   ; Output ; Info     ; Explicitly unconnected          ;
++------+--------+----------+---------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F11" ;
++------+--------+----------+---------------------------------+
+; Port ; Type   ; Severity ; Details                         ;
++------+--------+----------+---------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected          ;
+; q    ; Output ; Info     ; Explicitly unconnected          ;
++------+--------+----------+---------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F10" ;
++------+--------+----------+---------------------------------+
+; Port ; Type   ; Severity ; Details                         ;
++------+--------+----------+---------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected          ;
+; q_   ; Output ; Info     ; Explicitly unconnected          ;
++------+--------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F9" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q    ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F8" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q_   ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F7" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q    ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F6" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q_   ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F5" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q    ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F4" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q_   ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F3" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q    ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F2" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q_   ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F1" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q    ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "LevelToPulse:LTP|dFlipFlop:F0" ;
++------+--------+----------+--------------------------------+
+; Port ; Type   ; Severity ; Details                        ;
++------+--------+----------+--------------------------------+
+; rstn ; Input  ; Info     ; Explicitly unconnected         ;
+; q_   ; Output ; Info     ; Explicitly unconnected         ;
++------+--------+----------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|DzMin:DzM|tFlipFlop:F1"                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q_   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|DzMin:DzM|tFlipFlop:F0"                                                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; T     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|UndMin:UndM|tFlipFlop:F0"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; T     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F2"                                                                                                     ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Q_   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; SET  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F1"                                                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SET  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|DzSec:DzS|tFlipFlop:F0"                                                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; T     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; SET   ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F3"                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SET  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F2"                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SET  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F1"                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SET  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:timer|UndSec:UndS|tFlipFlop:F0"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; T     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; SET   ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F1" ;
++------+-------+----------+----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                            ;
++------+-------+----------+----------------------------------------------------+
+; rstn ; Input ; Info     ; Explicitly unconnected                             ;
++------+-------+----------+----------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binaryToDigit:btd|twoBitCounter:tbc|dFlipFlop:F0" ;
++------+-------+----------+----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                            ;
++------+-------+----------+----------------------------------------------------+
+; rstn ; Input ; Info     ; Explicitly unconnected                             ;
++------+-------+----------+----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F9"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F8"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F7"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F6"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F5"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F4"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F3"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F2"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F1"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delayC:dlc|dFlipFlop:F0"                                                                                                                                                               ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F15"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F14"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F13"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F12"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F11"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F10"                                                                                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F9"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F8"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F7"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F6"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F5"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F4"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F3"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F2"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F1"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:dl|dFlipFlop:F0"                                                                                                                                                                 ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q        ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Jun  5 16:45:46 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off REGUAAUTOMATIZADA -c REGUAAUTOMATIZADA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file alarm.v
+    Info (12023): Found entity 1: alarm File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/alarm.v Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at system.v(57): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 57
+Warning (10275): Verilog HDL Module Instantiation warning at system.v(64): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 64
+Warning (10275): Verilog HDL Module Instantiation warning at system.v(175): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 175
+Warning (10275): Verilog HDL Module Instantiation warning at system.v(186): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 186
+Info (12021): Found 1 design units, including 1 entities, in source file system.v
+    Info (12023): Found entity 1: system File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ValvulaEntrada.v
+    Info (12023): Found entity 1: ValvulaEntrada File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/ValvulaEntrada.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file gotejamento.v
+    Info (12023): Found entity 1: gotejamento File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/gotejamento.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file aspersao.v
+    Info (12023): Found entity 1: aspersao File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/aspersao.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file decoderIrrigacao.v
+    Info (12023): Found entity 1: decoderIrrigacao File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderIrrigacao.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file decoderNivelDagua.v
+    Info (12023): Found entity 1: decoderNivelDagua File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderNivelDagua.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at multiplexador.v(22): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/multiplexador.v Line: 22
+Warning (10275): Verilog HDL Module Instantiation warning at multiplexador.v(27): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/multiplexador.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexador.v
+    Info (12023): Found entity 1: multiplexador File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/multiplexador.v Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(16): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 16
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(26): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 26
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(36): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 36
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(46): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 46
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(56): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 56
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(66): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 66
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(76): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 76
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(86): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 86
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(96): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 96
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(106): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 106
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(116): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 116
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(126): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 126
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(136): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 136
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(146): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 146
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(156): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 156
+Warning (10275): Verilog HDL Module Instantiation warning at delay.v(166): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 166
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/delay.v
+    Info (12023): Found entity 1: delay File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/dFlipFlop.v
+    Info (12023): Found entity 1: dFlipFlop File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/dFlipFlop.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at decoderColuna.v(31): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoderColuna.v Line: 31
+Warning (10275): Verilog HDL Module Instantiation warning at decoderColuna.v(41): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoderColuna.v Line: 41
+Warning (10275): Verilog HDL Module Instantiation warning at decoderColuna.v(51): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoderColuna.v Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/decoderColuna.v
+    Info (12023): Found entity 1: decoderColuna File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoderColuna.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/tFlipFlop.v
+    Info (12023): Found entity 1: tFlipFlop File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/tFlipFlop.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(16): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 16
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(26): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 26
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(36): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 36
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(46): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 46
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(56): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 56
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(66): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 66
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(76): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 76
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(86): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 86
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(96): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 96
+Warning (10275): Verilog HDL Module Instantiation warning at delayC.v(106): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 106
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/delayC.v
+    Info (12023): Found entity 1: delayC File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delayC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/decoder7segDigit.v
+    Info (12023): Found entity 1: decoder7segDigit File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/decoder7segDigit.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at UndSec.v(25): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 25
+Warning (10275): Verilog HDL Module Instantiation warning at UndSec.v(35): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 35
+Warning (10275): Verilog HDL Module Instantiation warning at UndSec.v(46): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 46
+Warning (10275): Verilog HDL Module Instantiation warning at UndSec.v(58): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 58
+Info (12021): Found 1 design units, including 1 entities, in source file UndSec.v
+    Info (12023): Found entity 1: UndSec File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at DzSec.v(22): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 22
+Warning (10275): Verilog HDL Module Instantiation warning at DzSec.v(32): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 32
+Warning (10275): Verilog HDL Module Instantiation warning at DzSec.v(44): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file DzSec.v
+    Info (12023): Found entity 1: DzSec File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at UndMin.v(21): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v Line: 21
+Warning (10275): Verilog HDL Module Instantiation warning at UndMin.v(32): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v Line: 32
+Warning (10275): Verilog HDL Module Instantiation warning at UndMin.v(45): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v Line: 45
+Warning (10275): Verilog HDL Module Instantiation warning at UndMin.v(58): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v Line: 58
+Info (12021): Found 1 design units, including 1 entities, in source file UndMin.v
+    Info (12023): Found entity 1: UndMin File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndMin.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at DzMin.v(24): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v Line: 24
+Warning (10275): Verilog HDL Module Instantiation warning at DzMin.v(35): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file DzMin.v
+    Info (12023): Found entity 1: DzMin File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at cronometro.v(45): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 45
+Warning (10275): Verilog HDL Module Instantiation warning at cronometro.v(66): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 66
+Warning (10275): Verilog HDL Module Instantiation warning at cronometro.v(81): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 81
+Warning (10275): Verilog HDL Module Instantiation warning at cronometro.v(108): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 108
+Info (12021): Found 1 design units, including 1 entities, in source file cronometro.v
+    Info (12023): Found entity 1: cronometro File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file muxCountCronometro.v
+    Info (12023): Found entity 1: muxCountCronometro File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at twoBitCounter.v(16): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/twoBitCounter.v Line: 16
+Warning (10275): Verilog HDL Module Instantiation warning at twoBitCounter.v(26): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/twoBitCounter.v Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file twoBitCounter.v
+    Info (12023): Found entity 1: twoBitCounter File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/twoBitCounter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file binaryToDigit.v
+    Info (12023): Found entity 1: binaryToDigit File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/binaryToDigit.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(68): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 68
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(78): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 78
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(88): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 88
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(98): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 98
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(108): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 108
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(118): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 118
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(128): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 128
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(138): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 138
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(149): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 149
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(159): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 159
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(169): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 169
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(179): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 179
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(189): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 189
+Warning (10275): Verilog HDL Module Instantiation warning at LevelToPulse.v(199): ignored dangling comma in List of Port Connections File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 199
+Info (12021): Found 1 design units, including 1 entities, in source file LevelToPulse.v
+    Info (12023): Found entity 1: LevelToPulse File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoderDigitos.v
+    Info (12023): Found entity 1: decoderDigitos File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file output_files/teste.v
+Warning (10236): Verilog HDL Implicit Net warning at decoderIrrigacao.v(41): created implicit net for "and7wire" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderIrrigacao.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at DzSec.v(34): created implicit net for "and1Wire" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(14): created implicit net for "a" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(15): created implicit net for "b" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(20): created implicit net for "A_bar" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(21): created implicit net for "B_bar" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(22): created implicit net for "d0" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(23): created implicit net for "d1" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(24): created implicit net for "d2" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at muxCountCronometro.v(25): created implicit net for "d3" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/muxCountCronometro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at LevelToPulse.v(17): created implicit net for "alin_" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at LevelToPulse.v(17): created implicit net for "alin" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/LevelToPulse.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(108): instance has no name File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 108
+Info (12127): Elaborating entity "system" for the top level hierarchy
+Info (12128): Elaborating entity "alarm" for hierarchy "alarm:alarm" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 23
+Info (12128): Elaborating entity "ValvulaEntrada" for hierarchy "ValvulaEntrada:ve" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 32
+Info (12128): Elaborating entity "gotejamento" for hierarchy "gotejamento:gt" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 42
+Info (12128): Elaborating entity "aspersao" for hierarchy "aspersao:as" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 50
+Info (12128): Elaborating entity "delay" for hierarchy "delay:dl" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 57
+Info (12128): Elaborating entity "dFlipFlop" for hierarchy "delay:dl|dFlipFlop:F0" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/delay.v Line: 16
+Info (12128): Elaborating entity "delayC" for hierarchy "delayC:dlc" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 64
+Info (12128): Elaborating entity "decoderColuna" for hierarchy "decoderColuna:dC" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 77
+Info (12128): Elaborating entity "decoderNivelDagua" for hierarchy "decoderNivelDagua:dnd" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 96
+Info (12128): Elaborating entity "decoderIrrigacao" for hierarchy "decoderIrrigacao:di" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 114
+Info (12128): Elaborating entity "multiplexador" for hierarchy "multiplexador:mux" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 140
+Info (12128): Elaborating entity "binaryToDigit" for hierarchy "binaryToDigit:btd" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 149
+Info (12128): Elaborating entity "twoBitCounter" for hierarchy "binaryToDigit:btd|twoBitCounter:tbc" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/binaryToDigit.v Line: 28
+Info (12128): Elaborating entity "cronometro" for hierarchy "cronometro:timer" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 175
+Info (12128): Elaborating entity "UndSec" for hierarchy "cronometro:timer|UndSec:UndS" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 31
+Info (12128): Elaborating entity "tFlipFlop" for hierarchy "cronometro:timer|UndSec:UndS|tFlipFlop:F0" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/UndSec.v Line: 25
+Info (12128): Elaborating entity "DzSec" for hierarchy "cronometro:timer|DzSec:DzS" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 45
+Warning (10739): Verilog HDL warning at DzSec.v(10): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzSec.v Line: 10
+Info (12128): Elaborating entity "UndMin" for hierarchy "cronometro:timer|UndMin:UndM" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 66
+Info (12128): Elaborating entity "DzMin" for hierarchy "cronometro:timer|DzMin:DzM" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 81
+Warning (10739): Verilog HDL warning at DzMin.v(10): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v Line: 10
+Warning (10739): Verilog HDL warning at DzMin.v(11): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/DzMin.v Line: 11
+Info (12128): Elaborating entity "decoderDigitos" for hierarchy "cronometro:timer|decoderDigitos:comb_24" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 108
+Warning (10739): Verilog HDL warning at decoderDigitos.v(46): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v Line: 46
+Warning (10739): Verilog HDL warning at decoderDigitos.v(47): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v Line: 47
+Warning (10739): Verilog HDL warning at decoderDigitos.v(50): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v Line: 50
+Warning (10739): Verilog HDL warning at decoderDigitos.v(51): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/decoderDigitos.v Line: 51
+Info (12128): Elaborating entity "muxCountCronometro" for hierarchy "cronometro:timer|muxCountCronometro:MCC" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 132
+Info (12128): Elaborating entity "decoder7segDigit" for hierarchy "cronometro:timer|decoder7segDigit:d7s" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/cronometro.v Line: 147
+Info (12128): Elaborating entity "LevelToPulse" for hierarchy "LevelToPulse:LTP" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 186
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer alarm:alarm|or1~0 File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/alarm.v Line: 15
+Warning (12241): 35 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "area" technology mapper which leaves 0 WYSIWYG logic cells and I/Os untouched
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "C0" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "C1" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "C2" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "C3" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "C4" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "d0" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "d1" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "d2" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13035): Inserted always-enabled tri-state buffer between "d3" and its non-tri-state driver. File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C0" is moved to its source File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C1" is moved to its source File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C2" is moved to its source File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C3" is moved to its source File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C4" is moved to its source File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "C0~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "C1~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "C2~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "C3~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "C4~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "d0~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "d1~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "d2~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+    Warning (13010): Node "d3~synth" File: /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/system.v Line: 7
+Info (21057): Implemented 170 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21060): Implemented 9 bidirectional pins
+    Info (21061): Implemented 136 logic cells
+Info (144001): Generated suppressed messages file /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/REGUAAUTOMATIZADA.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 112 warnings
+    Info: Peak virtual memory: 341 megabytes
+    Info: Processing ended: Wed Jun  5 16:45:52 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/aluno/Documentos/teste_/Residential Irrigation - PBL 2FINAL/Residential Irrigation - PBL 2/output_files/REGUAAUTOMATIZADA.map.smsg.
+
+
