@@ -1,16 +1,20 @@
-module flipFlopD (
-    input wire clk,    // Clock input
-    input wire d,      // Data input
-    output reg q,      // Q output
-    output wire q_bar  // Q' (negated Q) output
-);
+module flipFlopD (input d,  
+	input rstn,  
+		input clk,
+			input set, 
+		output reg q,
+	output q_);
 
-    // Always block triggered on the rising edge of the clock
-    always @(posedge clk) begin
-        q <= d; // On the rising edge of the clock, q is assigned the value of d
-    end
-
-    // Assign q_bar as the negation of q
-    assign q_bar = ~q;
+	assign q_ = !q;
+		  
+		always @ (posedge clk or posedge rstn or posedge set)  begin
+			if (rstn)  begin
+				q <= 0; 
+			end else if (set) begin
+				q <= 1;
+			end else begin 
+				q <= d;  
+			end
+	end
 
 endmodule

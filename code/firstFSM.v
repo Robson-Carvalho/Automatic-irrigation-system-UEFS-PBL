@@ -46,14 +46,14 @@ flipFlopD FF0 (
   .clk(clock),
   .d(or0Wire),
   .q(qFF0Wire),
-  .q_bar(qBarFF0Wire)
+  .q_(qBarFF0Wire)
 );
 
 flipFlopD FF1 (
   .clk(clock),
   .d(and4Wire);
   .q(qFF1Wire);
-  .q_bar(qBarFF1Wire)
+  .q_(qBarFF1Wire)
 );
 
 // Output logic - Alarm

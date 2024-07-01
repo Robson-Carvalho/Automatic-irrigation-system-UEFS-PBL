@@ -37,7 +37,7 @@ flipFlopD FF0 (
   .clk(clock),
   .d(or0Wire),
   .q(qFF0Wire),
-  .q_bar(qBarFF0Wire)
+  .q_(qBarFF0Wire)
 );
 
 // Output logic - Y
