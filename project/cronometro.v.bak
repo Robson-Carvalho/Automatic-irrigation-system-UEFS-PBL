@@ -1,3 +1,0 @@
-module cronometro(Aus, Bus, Cus, Dus, Aum, Bum, Cum, Dum, Bdzs, Cdzs, Ddzs, Cdzm, Ddzm);
-
-endmodule
