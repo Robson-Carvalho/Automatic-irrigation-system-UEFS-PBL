@@ -1,4 +1,4 @@
-module tFlipFlop(clear, CLK, T, Q, Q_, SET);
+module tFlipFlop(clear, CLK, T, Q, Q_, set);
 	
 	input clear, CLK, T, SET;
 	output reg Q;
@@ -6,12 +6,12 @@ module tFlipFlop(clear, CLK, T, Q, Q_, SET);
 	
 	assign Q_ = !Q;
 	
-	always @(posedge CLK or posedge clear or posedge SET) begin
+	always @(posedge CLK or posedge clear or posedge set) begin
 	
 		if (clear) begin
 			Q <= 0;
 			
-		end else if (SET) begin
+		end else if (set) begin
 			Q <= 1;
 			
 		end else if (T) begin

@@ -8,3 +8,5 @@ clock - frêquencia
 ad - adicionar agrodefensivo
 chooseIrrigation - Alternar rega
 switch - Alternar máquina
+
+[] - fazer lógica de clock out da unidade de segundos de gotejmanto, aspersão e limpeza.

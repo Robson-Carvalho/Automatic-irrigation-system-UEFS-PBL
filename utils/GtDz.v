@@ -1,36 +1,34 @@
-module AsDz (clk, SETf0, SETf1, Clearf0, Clearf1, A, B, C, D);
+module GtDz (pulse, clk, A, B, C, D);
 	
 	// Declaração de entradas e saídas
-	input clk, SETf0, SETf1, Clearf0, Clearf1;
+	input clk, pulse;
 	output A, B, C, D;
 	
 	// Declaração de fio intermediários
-	wire Q_F0, Q_F1, Q_F2;
+	wire Q_F0;
 	
 	not (A, 1);
 	not (B, 1);
 	
-	// Lógica do contador da Dezenas de segundos
-	
 	tFlipFlop F0(
 
 	.T(1),
-	.clear(Clearf0),
+	.clear(),
 	.CLK(clk),
 	.Q(D),
 	.Q_(Q_F0),
-	.SET(SETf0),
+	.SET(),
 
 	);
 	
 	tFlipFlop F1(
 
 	.T(Q_F0),
-	.clear(Clearf1),
+	.clear(),
 	.CLK(clk),
 	.Q(C),
-	.Q_(Q_F1),
-	.SET(SETf1),
+	.Q_(),
+	.SET(),
 
 	);
 	

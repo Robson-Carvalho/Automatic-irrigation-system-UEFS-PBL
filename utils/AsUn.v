@@ -1,4 +1,4 @@
-module EnchLimpUn (pulse, clk, Us, alin, reachZero, A, B, C, D, clk_out);
+module AsUn (pulse, clk, Us, alin, reachZero, A, B, C, D, clk_out);
 
 	// Declaraçao de entradas e saídas
 	input clk, Us, alin, pulse, reachZero;
@@ -13,7 +13,6 @@ module EnchLimpUn (pulse, clk, Us, alin, reachZero, A, B, C, D, clk_out);
 	and and0 (play, clk, nor0Wire);
 	
 	// Lógica do contador da unidade de segundos
-	
 	tFlipFlop F0(
 
 	.T(1),
